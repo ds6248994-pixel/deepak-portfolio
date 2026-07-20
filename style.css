@@ -290,3 +290,32 @@ section{
 .whatsapp:hover{
     transform:scale(1.1);
 }
+#theme-btn{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#333;
+    color:white;
+}
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode nav{
+    background:#1f1f1f;
+}
+
+.dark-mode section{
+    background:#1a1a1a;
+}
+
+.dark-mode .project,
+.dark-mode .learning-box,
+.dark-mode .choose-card,
+.dark-mode .why-box{
+    background:#2b2b2b;
+    color:white;
+}
