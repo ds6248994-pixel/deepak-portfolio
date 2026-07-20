@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deepak | Data Entry Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
 <body>
 
@@ -36,7 +37,7 @@
 </a>
 </a>
 </header>
-<section id="services">
+<section id="services" data-aos="fade-right">
     <h2>My Services</h2>
 
     <ul>
@@ -50,7 +51,7 @@
 <button id="btn">Contact Me</button>
 
     
-<section id="about">
+<section id="about" data-aos="fade-up">
     <h2>About Me</h2>
 
     <p>
@@ -64,7 +65,7 @@
         My goal is to deliver high-quality work with 100% accuracy and on-time delivery.
     </p>
 </section>
-<section id="skills">
+<section id="skills" data-aos="zoom-in">
 
     <h2>My Skills</h2>
 
@@ -84,8 +85,7 @@
     </div>
 
 </section>
-<section id="projects">
-
+<section id="projects" data-aos="fade-left">
     <h2>My Projects</h2>
 
     <div class="project">
@@ -104,7 +104,7 @@
     </div>
 
 </section>
-<section id="why">
+<section id="why"  data-aos="zoom-in">
 
     <h2>Why Hire Me?</h2>
 
@@ -124,7 +124,7 @@
     </div>
 
 </section>
-<<section id="learning">
+<section id="learning" data-aos="fade-up">
 
     <h2>Currently Learning</h2>
 
@@ -144,7 +144,7 @@
     </div>
 
 </section>
-<section id="contact">
+<section id="contact" data-aos="fade-up">
 
     <h2>Contact Me</h2>
 
@@ -160,9 +160,7 @@
 
 </section>
 <footer>
-
     <p>© 2026 Deepak | All Rights Reserved</p>
-
 </footer>
 
 <a href="https://wa.me/918750476209" class="whatsapp" target="_blank">
@@ -170,6 +168,15 @@
 </a>
 
 <script src="script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true
+});
+</script>
 
 </body>
 </html>
