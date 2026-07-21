@@ -98,13 +98,14 @@
 
 </section>
 <section id="projects" data-aos="fade-left">
-    <section id="projects">
 
-    <h2>My Projects</h2>
+<h2>My Projects</h2>
 
     <div class="project-container">
 
         <div class="project-card">
+           <img src="portfolio-project.png" alt="Portfolio Website" class="project-img">
+
             <h3>🌐 Personal Portfolio Website</h3>
 
             <p>
@@ -183,11 +184,23 @@
     <p>📍 India</p>
     <form id="contact-form">
 
-    <input type="text" placeholder="Your Name" required>
+    <input
+        type="text"
+        name="from_name"
+        placeholder="Your Name"
+        required>
 
-    <input type="email" placeholder="Your Email" required>
+    <input
+        type="email"
+        name="from_email"
+        placeholder="Your Email"
+        required>
 
-    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <textarea
+        name="message"
+        placeholder="Your Message"
+        rows="5"
+        required></textarea>
 
     <button type="submit">Send Message</button>
 
@@ -195,7 +208,25 @@
 
 </section>
 <footer>
-    <p>© 2026 Deepak | All Rights Reserved</p>
+
+    <h2>Deepak</h2>
+
+    <p>Data Entry Specialist | Web Developer | AI Learner</p>
+
+    <div class="social-links">
+
+        <a href="mailto:your-email@gmail.com">📧 Email</a>
+
+        <a href="https://github.com/ds6248994-pixel" target="_blank">🐙 GitHub</a>
+
+        <a href="https://wa.me/918750476209" target="_blank">📱 WhatsApp</a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 Deepak | All Rights Reserved
+    </p>
+
 </footer>
 
 <a href="https://wa.me/918750476209" class="whatsapp" target="_blank">
@@ -205,15 +236,18 @@
 <button id="topBtn" title="Go to top">⬆</button>
 
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 <script>
 AOS.init({
-    duration:1000,
-    once:true
+    duration: 1000,
+    once: true
 });
 </script>
+
+<script src="script.js"></script>
 
 </body>
 </html>
