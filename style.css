@@ -320,3 +320,24 @@ section{
     background:#2b2b2b;
     color:white;
 }
+#topBtn{
+    display:none;
+    position:fixed;
+    bottom:100px;
+    right:25px;
+    z-index:999;
+    border:none;
+    outline:none;
+    background:#0d51fd;
+    color:white;
+    cursor:pointer;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.635);
+    transition:.3s;
+}
+#topBtn:hover{
+    background:#0b5ed7;
+    transform:scale(1.1);
+}

@@ -20,8 +20,36 @@ themeBtn.addEventListener("click", function () {
 
 window.addEventListener("load", function(){
 
-    document.querySelector(".excel").style.width="95%";
-    document.querySelector(".word").style.width="90%";
-    document.querySelector(".sheet").style.width="85%";
+    const excel = document.querySelector(".excel");
+    const word = document.querySelector(".word");
+    const sheet = document.querySelector(".sheet");
+
+    console.log(excel, word, sheet);
+
+    if(excel) excel.style.width = "95%";
+    if(word) word.style.width = "90%";
+    if(sheet) sheet.style.width = "85%";
+
+});
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("DOMContentLoaded", function () {
+
+    const topBtn = document.getElementById("topBtn");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+            topBtn.style.display = "block";
+        } else {
+            topBtn.style.display = "none";
+        }
+    });
+
+    topBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
 
 });
