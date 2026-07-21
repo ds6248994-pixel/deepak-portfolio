@@ -53,3 +53,68 @@ window.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+const text = [
+    "Professional Data Entry Specialist",
+    "Microsoft Excel Expert",
+    "Freelancer",
+    "Learning AI & Web Development"
+];
+
+let textIndex = 0;
+let charIndex = 0;
+
+const typing = document.getElementById("typing");
+
+function typeEffect() {
+
+    if (!typing) return;
+
+    if (charIndex < text[textIndex].length) {
+
+        typing.innerHTML += text[textIndex].charAt(charIndex);
+        charIndex++;
+
+        setTimeout(typeEffect, 70);
+
+    } else {
+
+        setTimeout(eraseEffect, 1500);
+
+    }
+
+}
+
+function eraseEffect() {
+
+    if (charIndex > 0) {
+
+        typing.innerHTML = text[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+
+        setTimeout(eraseEffect, 40);
+
+    } else {
+
+        textIndex++;
+
+        if (textIndex >= text.length) {
+            textIndex = 0;
+        }
+
+        setTimeout(typeEffect, 300);
+
+    }
+
+}
+
+typeEffect();
+// Mobile Menu
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector("nav ul");
+
+if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+    });
+}
