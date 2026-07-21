@@ -29,16 +29,24 @@
 
     <img src="Deepak.jpg" alt="Deepak" class="profile-img">
 
-    <h1>Deepak</h1>
+    <h1>Hi, I'm Deepak</h1>
 
-   <p id="typing"></p>
+    <p id="typing"></p>
 
-    <button class="hire-btn">Hire Me</button>
+    <p class="hero-text">
+        I build responsive websites and I'm learning Python, AI and Advanced Excel.
+    </p>
 
-<a href="Deepak_Resume_2026.pdf" download>
-    <button class="cv-btn">Download Resume</button>
-</a>
-</a>
+    <div class="hero-buttons">
+
+        <a href="#contact" class="hire-btn">Hire Me</a>
+
+        <a href="Deepak_Resume_2026.pdf" download class="cv-btn">
+            Download Resume
+        </a>
+
+    </div>
+
 </header>
 <section id="services" data-aos="fade-right">
     <h2>My Services</h2>
@@ -90,21 +98,33 @@
 
 </section>
 <section id="projects" data-aos="fade-left">
+    <section id="projects">
+
     <h2>My Projects</h2>
 
-    <div class="project">
-        <h3>📊 Excel Dashboard</h3>
-        <p>Created professional Excel reports and dashboards.</p>
-    </div>
+    <div class="project-container">
 
-    <div class="project">
-        <h3>📄 PDF to Excel</h3>
-        <p>Converted PDF files into editable Excel sheets.</p>
-    </div>
+        <div class="project-card">
+            <h3>🌐 Personal Portfolio Website</h3>
 
-    <div class="project">
-        <h3>🌐 Web Research</h3>
-        <p>Collected accurate online data for business projects.</p>
+            <p>
+                A responsive portfolio website built using HTML, CSS and JavaScript.
+                Includes Dark Mode, Responsive Design, Mobile Menu,
+                Typing Animation and Contact Form.
+            </p>
+
+            <div class="project-buttons">
+                <a href="https://ds6248994-pixel.github.io/deepak-portfolio/" target="_blank" class="demo-btn">
+                    Live Demo
+                </a>
+
+                <a href="https://github.com/ds6248994-pixel/deepak-portfolio" target="_blank" class="github-btn">
+                    GitHub
+                </a>
+            </div>
+
+        </div>
+
     </div>
 
 </section>
@@ -161,6 +181,17 @@
     </p>
 
     <p>📍 India</p>
+    <form id="contact-form">
+
+    <input type="text" placeholder="Your Name" required>
+
+    <input type="email" placeholder="Your Email" required>
+
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+</form>
 
 </section>
 <footer>
@@ -184,6 +215,5 @@ AOS.init({
 });
 </script>
 
-<button id="topBtn" title="Go to top">⬆</button>
 </body>
 </html>
