@@ -1,8 +1,10 @@
-document.getElementById("btn").addEventListener("click", function () {
+const btn = document.getElementById("btn");
 
-    window.open("https://wa.me/918750476209","_blank");
-
-});
+if (btn) {
+    btn.addEventListener("click", function () {
+        window.open("https://wa.me/918750476209", "_blank");
+    });
+}
 
 const themeBtn = document.getElementById("theme-btn");
 
