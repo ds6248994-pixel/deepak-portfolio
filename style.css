@@ -592,7 +592,7 @@ footer p{
     color:white;
     text-decoration:none;
     font-weight:600;
-    ttransition:0.3s ease;
+    transition:0.3s ease;
 }
 
 .social-links a:hover{
