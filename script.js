@@ -56,10 +56,10 @@ window.addEventListener("DOMContentLoaded", function () {
 
 });
 const text = [
-    "Professional Data Entry Specialist",
-    "Microsoft Excel Expert",
-    "Freelancer",
-    "Learning AI & Web Development"
+    "Aspiring Software Developer",
+    "Frontend Developer",
+    "Python Programmer",
+    "Software Development Intern Candidate"
 ];
 
 let textIndex = 0;
