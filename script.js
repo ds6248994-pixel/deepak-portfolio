@@ -1,151 +1,70 @@
-const btn = document.getElementById("btn");
-
-if (btn) {
-    btn.addEventListener("click", function () {
-        window.open("https://wa.me/918750476209", "_blank");
-    });
-}
-
-const themeBtn = document.getElementById("theme-btn");
-
-themeBtn.addEventListener("click", function () {
-
-    document.body.classList.toggle("dark-mode");
-
-    if(document.body.classList.contains("dark-mode")){
-        themeBtn.innerHTML="☀️ Light Mode";
-    }else{
-        themeBtn.innerHTML="🌙 Dark Mode";
-    }
-
-});
-
-window.addEventListener("load", function(){
-
-    const excel = document.querySelector(".excel");
-    const word = document.querySelector(".word");
-    const sheet = document.querySelector(".sheet");
-
-    console.log(excel, word, sheet);
-
-    if(excel) excel.style.width = "95%";
-    if(word) word.style.width = "90%";
-    if(sheet) sheet.style.width = "85%";
-
-});
-const topBtn = document.getElementById("topBtn");
-
-window.addEventListener("DOMContentLoaded", function () {
-
-    const topBtn = document.getElementById("topBtn");
-
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 50) {
-            topBtn.style.display = "block";
-        } else {
-            topBtn.style.display = "none";
-        }
-    });
-
-    topBtn.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-
-});
-const text = [
-    "Aspiring Software Developer",
-    "Frontend Developer",
-    "Python Programmer",
-    "Software Development Intern Candidate"
-];
-
-let textIndex = 0;
-let charIndex = 0;
-
-const typing = document.getElementById("typing");
-
-function typeEffect() {
-
-    if (!typing) return;
-
-    if (charIndex < text[textIndex].length) {
-
-        typing.innerHTML += text[textIndex].charAt(charIndex);
-        charIndex++;
-
-        setTimeout(typeEffect, 70);
-
-    } else {
-
-        setTimeout(eraseEffect, 1500);
-
-    }
-
-}
-
-function eraseEffect() {
-
-    if (charIndex > 0) {
-
-        typing.innerHTML = text[textIndex].substring(0, charIndex - 1);
-        charIndex--;
-
-        setTimeout(eraseEffect, 40);
-
-    } else {
-
-        textIndex++;
-
-        if (textIndex >= text.length) {
-            textIndex = 0;
-        }
-
-        setTimeout(typeEffect, 300);
-
-    }
-
-}
-
-typeEffect();
-// Mobile Menu
-
+// Portfolio interactions: mobile menu, typing line, and back-to-top button.
 const menuToggle = document.querySelector(".menu-toggle");
-const navMenu = document.querySelector("nav ul");
+const navMenu = document.querySelector(".nav-links");
 
 if (menuToggle && navMenu) {
-    menuToggle.addEventListener("click", function () {
-        navMenu.classList.toggle("active");
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navMenu.classList.toggle("active");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+    menuToggle.innerHTML = isOpen ? "&times;" : "&#9776;";
+  });
+
+  navMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+      menuToggle.innerHTML = "&#9776;";
     });
+  });
 }
-// ===== EmailJS =====
 
-emailjs.init({
-    publicKey: "7jp2096y41e1HeRaJ",
-});
+const typing = document.getElementById("typing");
+const phrases = [
+  "Aspiring Software Developer",
+  "Building Web Applications",
+  "Learning React & Python",
+  "Growing Through Projects"
+];
 
-const contactForm = document.getElementById("contact-form");
+if (typing && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let deleting = false;
 
-if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
-
-        e.preventDefault();
-
-        emailjs.sendForm(
-            "service_8jj40zu",
-            "template_x2zszte",
-            this
-        )
-        .then(() => {
-            alert("✅ Message Sent Successfully!");
-            contactForm.reset();
-        })
-        .catch((error) => {
-            console.error(error);
-            alert("❌ " + (error.text || "Failed to send message."));
-        });
-
-    });
+  function typeEffect() {
+    const phrase = phrases[phraseIndex];
+    typing.textContent = phrase.slice(0, charIndex);
+    if (!deleting && charIndex < phrase.length) {
+      charIndex++;
+      setTimeout(typeEffect, 75);
+    } else if (!deleting) {
+      deleting = true;
+      setTimeout(typeEffect, 1450);
+    } else if (charIndex > 0) {
+      charIndex--;
+      setTimeout(typeEffect, 35);
+    } else {
+      deleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      setTimeout(typeEffect, 300);
+    }
+  }
+  typeEffect();
 }
+
+const topBtn = document.getElementById("topBtn");
+if (topBtn) {
+  const updateTopButton = () => {
+    topBtn.style.display = window.scrollY > 350 ? "grid" : "none";
+  };
+  window.addEventListener("scroll", updateTopButton, { passive: true });
+  updateTopButton();
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+const year = document.getElementById("year");
+if (year) year.textContent = new Date().getFullYear();

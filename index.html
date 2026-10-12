@@ -1,689 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepak | Software Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Deepak's software developer portfolio featuring web development projects, technical skills, and internship interests.">
+  <meta name="theme-color" content="#080d18">
+  <title>Deepak | Software Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <nav class="navbar">
+    <a class="logo" href="#home" aria-label="Deepak home"><span class="logo-mark">&lt;/&gt;</span> Deepak<span class="logo-dot">.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#learning">Learning</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="#contact">Let's Connect <span>↗</span></a>
+  </nav>
 
-    <nav>
-        <div class="logo">Deepak</div>
-
-        <div class="menu-toggle">&#9776;</div>
-
-
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <button id="theme-btn">🌙 Dark Mode</button>
-    </nav>
-
-    <header id="home">
-        
-        <img src="Deepak.jpg" alt="Headshot of Deepak smiling in a bright workspace with a friendly professional tone"
-            class="profile-img">
-
-
-   
-        <h1>Hi, I'm Deepak</h1>
-
-       
-            <p id="typing"></p>
-
-            <p class="hero-text">
-                Aspiring Software Developer passionate about building
-                responsive web applications and practical software projects
-                using HTML, CSS, JavaScript, React and Python.
-            </p>
-
-
-        <div class="hero-buttons">
-
-            <a href="#contact" class="hire-btn">Hire Me</a>
-
-            <a href="Deepak_Resume_2026.pdf" download class="cv-btn">
-                Download Resume
-            </a>
-
-        </div>
-
-    </header>
-    <main>
-  ```html
-<section id="services" class="services">
-
-    <h2>Technical Skills</h2>
-
-    <div class="service-container">
-
-        <div class="service-card">
-            <h3>🌐 HTML5</h3>
-            <p>Semantic HTML, Page Structure, Forms and Accessible Web Content.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>🎨 CSS3</h3>
-            <p>Responsive Design, Flexbox, Grid, Layouts and Styling.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>⚡ JavaScript</h3>
-            <p>DOM Manipulation, Events, Functions, Arrays and API Integration.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>⚛️ React</h3>
-            <p>Components, Props, State, Hooks and React Application Development.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>🖥️ Node.js & Express</h3>
-            <p>Backend Fundamentals, REST APIs, Routing and Server Development.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>🗄️ Supabase</h3>
-            <p>Database Integration, Authentication and Row Level Security Basics.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>🐍 Python</h3>
-            <p>Programming Fundamentals, Functions, Classes and Object-Oriented Programming.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>🔧 Git & GitHub</h3>
-            <p>Version Control, Repository Management and Project Publishing.</p>
-        </div>
-
+  <header class="hero section-wrap" id="home">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot"></span> OPEN TO SOFTWARE DEVELOPMENT INTERNSHIPS</p>
+      <h1>Hi, I'm Deepak.<br><span class="gradient-text">I build for the web.</span></h1>
+      <p class="typing-line"><span class="terminal-symbol">&gt;_</span> <span id="typing">Aspiring Software Developer</span><span class="cursor">|</span></p>
+      <p class="hero-text">I’m an aspiring software developer who learns by building practical projects. I work with HTML, CSS, JavaScript, React and Python, and I’m growing my skills in backend development and databases.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="button button-primary">Explore Projects <span>↘</span></a>
+        <a href="Resume.pdf" class="button button-secondary" download>Download Resume <span>↓</span></a>
+      </div>
+      <div class="hero-meta">
+        <span><span class="meta-icon">⌘</span> Frontend &amp; Full-stack learning</span>
+        <span><span class="meta-icon">⌖</span> India</span>
+      </div>
     </div>
-
-</section>
-```
-    
-<section id="about" data-aos="fade-up">
-
-    <h2>About Me</h2>
-
-    <p>
-        Hello! I'm <strong>Deepak</strong>, an aspiring software
-        developer interested in building practical and responsive
-        web applications.
-    </p>
-
-    <p>
-        I have worked on projects using HTML, CSS, JavaScript,
-        React, Python and backend technologies. My projects include
-        a weather application, a gaming platform, student utility
-        apps and an e-commerce website.
-    </p>
-
-    <p>
-        I enjoy learning by building projects, solving problems
-        and improving my coding skills. I am looking for a
-        software development or web development internship where
-        I can learn from experienced developers and contribute
-        to real-world projects.
-    </p>
-
-</section>
-
-    
-<section id="skills" data-aos="zoom-in">
-
-    <h2>Technical Skills</h2>
-
-    <div class="service-container">
-
-        <div class="service-card">
-            <h3>🌐 HTML5</h3>
-            <p>Semantic HTML and structured web pages.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>🎨 CSS3</h3>
-            <p>Responsive layouts, styling and animations.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>⚡ JavaScript</h3>
-            <p>DOM manipulation, events and interactive features.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>⚛️ React</h3>
-            <p>Component-based user interfaces using React and Vite.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>🐍 Python</h3>
-            <p>Programming fundamentals, data structures and OOP.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>🔧 Git & GitHub</h3>
-            <p>Version control, repositories and project publishing.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>🟢 Node.js & Express</h3>
-            <p>Backend development and API integration.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>🗄️ Supabase</h3>
-            <p>Database integration, authentication and access policies.</p>
-        </div>
-
+    <div class="hero-visual" aria-label="Developer profile">
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
+      <div class="profile-frame">
+        <img src="Deepak.jpg" alt="Portrait of Deepak" class="profile-img">
+      </div>
+      <div class="floating-card floating-code"><span class="code-dot"></span><span>building_with</span><strong>curiosity()</strong></div>
+      <div class="floating-card floating-stack"><span>MY TOOLKIT</span><strong>HTML · CSS · JS</strong><strong>React · Python</strong></div>
+      <div class="visual-glow"></div>
     </div>
-
-</section>
-
-    <section id="projects" data-aos="fade-left">
-
-        <h2>My Projects</h2>
-
-        <div class="project-container">
-
-            <article class="project-card">
-                <img src="portfolio-project.png"
-                    alt="Screenshot of a personal portfolio website homepage with project cards and a dark mode friendly layout"
-                    class="project-img">
-
-                <h3>🌐 Personal Portfolio Website</h3>
-
-                <p>
-                    A responsive portfolio website built using HTML, CSS and JavaScript.
-                    Includes Dark Mode, Responsive Design, Mobile Menu,
-                    Typing Animation and Contact Form.
-                </p>
-
-
-                <div class="project-buttons">
-                    <a href="https://ds6248994-pixel.github.io/deepak-portfolio/" target="_blank" class="demo-btn">
-                        Live Demo
-                    </a>
-
-                    <a href="https://github.com/ds6248994-pixel/deepak-portfolio" target="_blank" class="github-btn">
-                        GitHub
-                    </a>
-                </div>    
-            </article>
-        
-            <article class="project-card">
-
-                <img src="Age-Cheacker.png" class="project-img" alt="Age Checker Project">
-
-                <h3> 🧮 Age Checker</h3>
-
-                <p>
-                    An interactive JavaScript application that accepts a user's
-                    age and determines whether they are an adult or a minor.
-                    Demonstrates user input handling, conditional logic and
-                    dynamic results.
-                </p>
-                <p>
-                    <strong>Technologies:</strong> HTML5, CSS3, JavaScript
-                </p>
-
-                <div class="project-buttons">
-
-                    <a href="https://ds6248994-pixel.github.io/Age-checker/" target="_blank" class="demo-btn">
-                        Live Demo
-                    </a>
-
-                    <a href="https://github.com/ds6248994-pixel/age-checker" target="_blank" class="github-btn">
-                        GitHub
-                    </a>
-                </div>
-            </article>
-
-            <article class="project-card">
-
-                <img src="Calculator.png" class="project-img" alt="Calculator.png Project">
-
-                <h3> 🧮 Calculator</h3>
-
-                                
-                <p>
-                    An interactive calculator that performs basic arithmetic
-                    operations, including addition, subtraction, multiplication,
-                    division and percentage calculations.
-                </p>
-
-                <p>
-                    <strong>Technologies:</strong> HTML5, CSS3, JavaScript
-                </p>
-
-                <div class="project-buttons">
-
-
-                    <a href="https://ds6248994-pixel.github.io/Calculator/" target="_blank" class="demo-btn">
-                        Live Demo
-                    </a>
-
-                    <a href="https://github.com/ds6248994-pixel/calculator" target="_blank" class="github-btn">
-                        GitHub
-                    </a>
-                </div>
-             </article>
-                       <article class="project-card">
-
-            <img src="Student-List-Viewer.png"
-                 class="project-img"
-                 alt="Student List Viewer Project">
-
-            <h3>📚 Student List Viewer</h3>
-
-            <p>
-                A student record viewer that displays student IDs, names,
-                ages, courses and cities in an organized card layout.
-                Demonstrates working with data and rendering records
-                in a user-friendly interface.
-            </p>
-
-            <p>
-                <strong>Technologies:</strong> HTML5, CSS3, JavaScript
-            </p>
-
-            <div class="project-buttons">
-
-                <a href="https://ds6248994-pixel.github.io/student-list-viewer/"
-                   target="_blank"
-                   class="demo-btn">
-                    Live Demo
-                </a>
-
-                <a href="https://github.com/ds6248994-pixel/student-list-viewer"
-                   target="_blank"
-                   class="github-btn">
-                    GitHub
-                </a>
-
-                
-
-            </div>
-                               </article>
-
-        <article class="project-card">
-
-            <img src="Student-Search-App.png"
-                 class="project-img"
-                 alt="Student Search App">
-
-            <h3>📚Student Search App</h3>
-
-            <p>
-                A student search app typically refers to either a platform for finding colleges and courses, a directory tool for teachers to look up student data, or a database to connect with peer.
-            </p>
-
-            <div class="project-buttons">
-
-                <a href="https://ds6248994-pixel.github.io/student-search-app/"
-                   target="_blank"
-                   class="demo-btn">
-                    Live Demo
-                </a>
-
-                <a href="https://github.com/ds6248994-pixel/student-search-app/"
-                   target="_blank"
-                   class="github-btn">
-                    GitHub
-                </a>
-
-                
-
-            </div>
-
-        </article>
-
-        <article class="project-card">
-
-            <img src="Student-Search-App.png"
-                 class="project-img"
-                 alt="Student Search App">
-
-            <h3>📚Student Search App</h3>
-
-            <p>
-                An interactive student search application that lets users
-                find student records by name or roll number and view
-                relevant student details.
-            </p>
-
-            <p>
-                <strong>Technologies:</strong> HTML5, CSS3, JavaScript
-            </p>
-
-            <div class="project-buttons">
-
-                <a href="https://ds6248994-pixel.github.io/student-search-app/"
-                   target="_blank"
-                   class="demo-btn">
-                    Live Demo
-                </a>
-
-                <a href="https://github.com/ds6248994-pixel/student-search-app/"
-                   target="_blank"
-                   class="github-btn">
-                    GitHub
-                </a>
-
-                
-
-            </div>
-        </article>
-        
-        <article class="project-card">
-
-            <img
-                src="weatherly-project.png"
-                class="project-img"
-                alt="Weatherly weather application screenshot"
-                loading="lazy"
-            >
-
-            <h3>🌦️ Weatherly — Weather Web App</h3>
-
-            <p>
-                A weather application built with React and Vite,
-                featuring weather forecasts, air quality information,
-                API integration and an interactive live map.
-            </p>
-
-            <p>
-                <strong>Technologies:</strong>
-                React, JavaScript, Vite, Express, Visual Crossing API
-            </p>
-
-            <div class="project-buttons">
-
-                <a
-                    href="https://weatherly-deepak-2a7e.vercel.app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="demo-btn"
-                >
-                    Live Demo
-                </a>
-
-                <a
-                    href="https://github.com/ds6248994-pixel"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="github-btn"
-                >
-                    GitHub
-                </a>
-
-            </div>
-
-        </article>
-        
-        <article class="project-card">
-
-            <img
-                src="djrock-gaming.png"
-                class="project-img"
-                alt="DJROCK Gaming platform screenshot"
-                loading="lazy"
-            >
-
-            <h3>🎮 DJROCK Gaming — Gaming Platform</h3>
-
-            <p>
-                A gaming platform featuring user authentication,
-                profiles, game listings, favorites, an admin dashboard.
-                
-            </p>
-
-            <p>
-                <strong>Technologies:</strong>
-                React, JavaScript, Node.js, Express, Supabase
-            </p>
-
-            <div class="project-buttons">
-
-                <a
-                    href="https://github.com/ds6248994-pixel"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="github-btn"
-                >
-                    GitHub
-                </a>
-
-            </div>
-
-        </article>
-        
-        <article class="project-card">
-
-            <img
-                src="socialai-manager.png"
-                class="project-img"
-                alt="SocialAI Manager project preview"
-                loading="lazy"
-            >
-
-            <h3>🔐 SocialAI Manager</h3>
-
-            <p>
-                An in-progress social media management application
-                focused on secure account integration, privacy
-                and protected token storage.
-            </p>
-
-            <p>
-                <strong>Technologies:</strong>
-                React, JavaScript, Node.js, Express and Supabase
-            </p>
-
-            <p>
-                <strong>Project Status:</strong> In Progress
-            </p>
-
-            <div class="project-buttons">
-                <a
-                    href="https://github.com/ds6248994-pixel"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="github-btn"
-                >
-                    GitHub
-                </a>
-            </div>
-
-        </article>
-
-        
-        <article class="project-card">
-
-            <img
-                src="techtrunk.png"
-                class="project-img"
-                alt="TechTrunk shopping website preview"
-                loading="lazy"
-            >
-
-            <h3>🛒 TechTrunk — Shopping Website</h3>
-
-            <p>
-                A shopping website project featuring product listings,
-                product information and an Add to Cart feature with
-                a cart count.
-            </p>
-
-            <p>
-                <strong>Technologies:</strong>
-                HTML5, CSS3 and JavaScript
-            </p>
-
-            <p>
-                <strong>Project Status:</strong> In Progress
-            </p>
-
-            <div class="project-buttons">
-                <a
-                    href="https://github.com/ds6248994-pixel"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="github-btn"
-                >
-                    GitHub
-                </a>
-            </div>
-
-        </article>
-
-
-
-
-
-
-
-
-        </section>
-    <section id="why" data-aos="zoom-in">
-
-        <h2>Why Hire Me?</h2>
-
-        <div class="why-box">
-            <h3>✔ 100% Accuracy</h3>
-            <p>I always focus on accurate and error-free work.</p>
+  </header>
+
+  <main>
+    <section id="about" class="section-wrap section-block">
+      <div class="section-heading">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>A developer in <span class="gradient-text">progress.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy panel">
+          <p class="lead">I believe the best way to learn technology is to use it to solve real problems.</p>
+          <p>I have been building small web applications and larger full-stack projects to strengthen my understanding of user interfaces, APIs, authentication, and data handling.</p>
+          <p>I’m currently looking for a software or web development internship where I can learn from a team, contribute thoughtfully, and keep improving through real-world work.</p>
         </div>
-
-        <div class="why-box">
-            <h3>⏰ On-Time Delivery</h3>
-            <p>I complete every project before the deadline.</p>
+        <div class="about-facts">
+          <div class="fact-card"><span class="fact-number">01</span><div><h3>Build</h3><p>Turn concepts into usable projects.</p></div></div>
+          <div class="fact-card"><span class="fact-number">02</span><div><h3>Learn</h3><p>Practice, debug and improve consistently.</p></div></div>
+          <div class="fact-card"><span class="fact-number">03</span><div><h3>Collaborate</h3><p>Ready to learn from experienced developers.</p></div></div>
         </div>
-
-        <div class="why-box">
-            <h3>😊 Client Satisfaction</h3>
-            <p>My goal is to provide high-quality service and build long-term relationships.</p>
-        </div>
-
+      </div>
     </section>
-    
-<section id="learning" data-aos="fade-up">
 
-    <h2>Learning & Development</h2>
+    <section id="skills" class="section-wrap section-block">
+      <div class="section-heading">
+        <p class="eyebrow">02 / TOOLBOX</p>
+        <h2>Technical <span class="gradient-text">skills.</span></h2>
+        <p class="section-subtitle">Technologies I’ve used in learning and project work.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card"><span class="skill-icon">🌐</span><h3>HTML5</h3><p>Semantic structure, forms and accessible page content.</p><span class="skill-tag">Frontend</span></article>
+        <article class="skill-card"><span class="skill-icon">🎨</span><h3>CSS3</h3><p>Responsive layouts, Flexbox, Grid and UI styling.</p><span class="skill-tag">Frontend</span></article>
+        <article class="skill-card"><span class="skill-icon">⚡</span><h3>JavaScript</h3><p>DOM, events, arrays, functions and API integration.</p><span class="skill-tag">Frontend</span></article>
+        <article class="skill-card"><span class="skill-icon">⚛️</span><h3>React</h3><p>Components, props, state, hooks and Vite apps.</p><span class="skill-tag">Frontend</span></article>
+        <article class="skill-card"><span class="skill-icon">🐍</span><h3>Python</h3><p>Core programming, data structures and OOP practice.</p><span class="skill-tag">Programming</span></article>
+        <article class="skill-card"><span class="skill-icon">🟢</span><h3>Node.js &amp; Express</h3><p>Server fundamentals, routing and REST API work.</p><span class="skill-tag">Backend</span></article>
+        <article class="skill-card"><span class="skill-icon">🗄️</span><h3>Supabase</h3><p>Database integration, authentication and RLS basics.</p><span class="skill-tag">Database</span></article>
+        <article class="skill-card"><span class="skill-icon">🔧</span><h3>Git &amp; GitHub</h3><p>Version control, repository workflow and publishing.</p><span class="skill-tag">Tools</span></article>
+      </div>
+    </section>
 
-    <div class="learning-box">
-        <h3>🌐 Frontend Development</h3>
-        <p>
-            Practicing HTML, CSS, JavaScript and React to build
-            responsive and interactive web applications.
-        </p>
-    </div>
+    <section id="projects" class="section-wrap section-block">
+      <div class="section-heading">
+        <p class="eyebrow">03 / SELECTED WORK</p>
+        <h2>Projects I've <span class="gradient-text">built.</span></h2>
+        <p class="section-subtitle">A mix of deployed mini-apps and larger projects in development. Status is shown transparently.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card project-featured">
+          <div class="project-image"><img src="Portfolio.png" alt="Personal portfolio website preview" loading="lazy"><span class="project-index">PROJECT 01</span></div>
+          <div class="project-content"><div class="project-topline"><span class="project-type">PERSONAL WEBSITE</span><span class="project-status status-live">● Live</span></div><h3>Personal Developer Portfolio</h3><p>A responsive portfolio to present my skills, projects and internship goals. Includes mobile navigation, theme support and a contact form.</p><div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://ds6248994-pixel.github.io/deepak-portfolio/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a href="https://github.com/ds6248994-pixel/deepak-portfolio" target="_blank" rel="noopener noreferrer">Source Code ↗</a></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-image"><img src="Age-Cheacker.png" alt="Age Checker project screenshot" loading="lazy"><span class="project-index">PROJECT 02</span></div>
+          <div class="project-content"><div class="project-topline"><span class="project-type">JAVASCRIPT MINI APP</span><span class="project-status status-live">● Live</span></div><h3>Age Checker</h3><p>Accepts user input and determines adult or minor status using conditional logic and dynamic results.</p><div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://ds6248994-pixel.github.io/Age-checker/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a href="https://github.com/ds6248994-pixel/age-checker" target="_blank" rel="noopener noreferrer">Source Code ↗</a></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-image"><img src="Calculator.png" alt="Calculator project screenshot" loading="lazy"><span class="project-index">PROJECT 03</span></div>
+          <div class="project-content"><div class="project-topline"><span class="project-type">JAVASCRIPT MINI APP</span><span class="project-status status-live">● Live</span></div><h3>Calculator</h3><p>A calculator for common arithmetic operations, built to practice input handling and interactive UI behavior.</p><div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://ds6248994-pixel.github.io/Calculator/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a href="https://github.com/ds6248994-pixel/calculator" target="_blank" rel="noopener noreferrer">Source Code ↗</a></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-image"><img src="Student-List-Viewer.png" alt="Student List Viewer project screenshot" loading="lazy"><span class="project-index">PROJECT 04</span></div>
+          <div class="project-content"><div class="project-topline"><span class="project-type">DATA DISPLAY</span><span class="project-status status-live">● Live</span></div><h3>Student List Viewer</h3><p>Displays student records such as IDs, names, ages, courses and cities in a structured, readable layout.</p><div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://ds6248994-pixel.github.io/student-list-viewer/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a href="https://github.com/ds6248994-pixel/student-list-viewer" target="_blank" rel="noopener noreferrer">Source Code ↗</a></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-placeholder weather-placeholder"><span>☁</span><small>REACT · API · MAP</small></div>
+          <div class="project-content"><div class="project-topline"><span class="project-type">WEATHER APPLICATION</span><span class="project-status status-live">● Live</span></div><h3>Weatherly</h3><p>A React weather app with forecast data, air-quality information and an interactive map. Built with a separate Express backend.</p><div class="tech-list"><span>React</span><span>Vite</span><span>Express</span><span>API</span></div><div class="project-links"><a href="https://weatherly-deepak-2a7e.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a href="https://github.com/ds6248994-pixel" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-placeholder gaming-placeholder"><img src="DJROCK Gaming.png" alt="DJROCK Gaming"><span>🎮</span><small>GAMES · AUTH · DATABASE</small></div>
+          <div class="project-content"><div class="project-topline"><span class="project-type">FULL-STACK PLATFORM</span><span class="project-status status-live">● Live</span></div><h3>DJROCK Gaming</h3><p>A gaming platform with game listings, user authentication, profiles, favorites and an admin dashboard.</p><div class="tech-list"><span>React</span><span>Node.js</span><span>Express</span><span>Supabase</span></div><div class="project-links"><a href="https://djrock-gaming.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a href="https://github.com/ds6248994-pixel" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-placeholder social-placeholder"><span>🔐</span><small>PRIVACY · OAUTH · SECURITY</small></div>
+          <div class="project-content"><div class="project-topline"><span class="project-type">SOCIAL MEDIA TOOL</span><span class="project-status status-progress">In progress</span></div><h3>SocialAI Manager</h3><p>A project exploring secure social account integrations, authorization flows, privacy and protected token storage.</p><div class="tech-list"><span>React</span><span>Express</span><span>Supabase</span><span>OAuth</span></div><div class="project-links"><a href="https://github.com/ds6248994-pixel" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-placeholder shop-placeholder"><span>🛒</span><small>PRODUCTS · CART UI</small></div>
+          <div class="project-content"><div class="project-topline"><span class="project-type">SHOPPING WEBSITE</span><span class="project-status status-progress">In progress</span></div><h3>TechTrunk</h3><p>A shopping website concept with product sections and a cart interaction. The cart rendering flow is still being developed.</p><div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://github.com/ds6248994-pixel" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-placeholder student-placeholder"><img src="Student-Search-App.png" alt="Student Search App"> <span>⌕</span><small>SEARCH · DOM</small></div>
+          <div class="project-content"><div class="project-topline"><span class="project-type">JAVASCRIPT MINI APP</span><span class="project-status status-live">● Live</span></div><h3>Student Search App</h3><p>Searches student records by name or roll number and shows matching details in the interface.</p><div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://ds6248994-pixel.github.io/student-search-app/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a href="https://github.com/ds6248994-pixel/student-search-app" target="_blank" rel="noopener noreferrer">Source Code ↗</a></div></div>
+        </article>
+      </div>
+    </section>
 
-    <div class="learning-box">
-        <h3>🐍 Python Programming</h3>
-        <p>
-            Strengthening Python fundamentals, data structures,
-            classes, objects and object-oriented programming.
-        </p>
-    </div>
+    <section id="learning" class="section-wrap section-block">
+      <div class="section-heading">
+        <p class="eyebrow">04 / CURRENT FOCUS</p>
+        <h2>Always <span class="gradient-text">learning.</span></h2>
+      </div>
+      <div class="learning-grid">
+        <article class="learning-card"><span>01</span><div><h3>Frontend Engineering</h3><p>Improving responsive design, JavaScript fundamentals and React component patterns.</p></div></article>
+        <article class="learning-card"><span>02</span><div><h3>Python &amp; OOP</h3><p>Practicing classes, objects, data structures and writing clearer Python programs.</p></div></article>
+        <article class="learning-card"><span>03</span><div><h3>Backend &amp; Databases</h3><p>Learning API design, authentication, database access and security fundamentals.</p></div></article>
+        <article class="learning-card"><span>04</span><div><h3>Git Workflow</h3><p>Building confidence with commits, repositories and deployment workflows.</p></div></article>
+      </div>
+    </section>
 
-    <div class="learning-box">
-        <h3>⚙️ Backend Development</h3>
-        <p>
-            Building backend features with Node.js and Express,
-            and learning database integration using Supabase.
-        </p>
-    </div>
+    <section id="contact" class="section-wrap contact-section">
+      <div class="contact-panel">
+        <p class="eyebrow">05 / CONTACT</p>
+        <h2>Let's build something <span class="gradient-text">useful.</span></h2>
+        <p>I’m interested in software development and web development internship opportunities. Feel free to reach out about a role, project or collaboration.</p>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:ds6248994@gmail.com">Email Me ↗</a>
+          <a class="button button-secondary" href="https://github.com/ds6248994-pixel" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+        </div>
+        
+      </div>
+    </section>
+  </main>
 
-    <div class="learning-box">
-        <h3>🔧 Git & GitHub</h3>
-        <p>
-            Practicing version control, managing repositories
-            and publishing web development projects.
-        </p>
-    </div>
+  <footer class="footer">
+    <a class="logo" href="#home"><span class="logo-mark">&lt;/&gt;</span> Deepak<span class="logo-dot">.</span></a>
+    <p>Aspiring Software Developer · HTML · CSS · JavaScript · React · Python</p>
+    <div class="social-links"><a href="https://github.com/ds6248994-pixel" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+    <p class="copyright">© <span id="year">2026</span> Deepak. Built while learning, improved with every project.</p>
+  </footer>
 
-</section>
-
-    <section id="contact" data-aos="fade-up">
-
-      <p>💼 Available for freelance work</p>
-
-          <a href="https://www.fiverr.com/deepaksingh717"
-             target="_blank"
-             class="fiverr-btn">
-             Contact Me on Fiverr
-         </a>
-
-          <p>📍 India</p>
-
-   <form id="contact-form">
-
-    <input type="text"
-           name="from_name"
-           placeholder="Your Name"
-           required>
-
-    <input type="email"
-           name="from_email"
-           placeholder="Your Email"
-           required>
-
-    <textarea name="message"
-              placeholder="Your Message"
-              rows="5"
-              required></textarea>
-
-    <button type="submit">Send Message</button>
-
-</form>
-
-</section>
-</main>
-
-<footer>
-
-    <h2>Deepak</h2>
-
-    <p>Data Entry Specialist | Web Developer | AI Learner</p>
-
-    <div class="social-links">
-
-        <a href="https://github.com/ds6248994-pixel"
-           target="_blank">
-            🐙 GitHub
-        </a>
-
-    </div>
-
-    <p class="copyright">
-        © 2026 Deepak | All Rights Reserved
-    </p>
-
-</footer>
-
-<button id="topBtn" title="Go to top">⬆</button>
-
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-    AOS.init({
-        duration: 1000,
-        once: true
-    });
-</script>
-
-    <script src="script.js"></script>
-
+  <button id="topBtn" class="top-btn" type="button" title="Back to top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
 </body>
-
 </html>
